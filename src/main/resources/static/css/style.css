@@ -1,0 +1,243 @@
+body{
+   font-family: Arial, Helvetica, sans-serif;
+   box-sizing: border-box;
+   background-color: #f4f6f8;
+   color: #333;
+   margin: 0;
+   padding: 0;
+}
+header {
+   background-color: #2c3e50;
+   color: white;
+   padding: 20px;
+   text-align: left;
+   display: flex;
+   justify-content:space-between;
+   align-items: center;
+}
+
+header h1 {
+   margin: 0;
+   color: #3498db;
+   font-size: 1.5rem;
+ 
+}
+
+.languagePanel{
+   transform: translate(-50%, -50%);
+   display: flex;
+   gap: 10px;
+   margin-left:auto;
+   margin-top: 20px;
+
+}
+.languagePanel a{
+margin: 0 5px;
+color: #ecf0f1;
+text-decoration: none;
+font-weight: bold;
+
+}
+
+.languagePanel a:hover{
+   text-decoration: underline;
+}
+
+header a{
+  color: #ecf0f1; 
+  margin: 10px;
+  text-decoration: none;
+}
+
+header a:hover {
+   text-decoration: underline;
+ }
+
+main {
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 30px;
+background-color: white;
+border-radius: 8px;
+box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);;
+}
+
+
+main  form {
+ display: flex;
+  flex-direction: column;
+   }
+main form h2,form h1 {
+ margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #4c86af; 
+  text-align: center;
+   }
+
+main  form label {
+margin-bottom: 15px;
+font-weight: bold;
+ }
+main  form input,
+main  form select,
+main  form button {
+   padding: 10px;
+ margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+   font-size: 1em;
+    }
+main  form input[type="submit"],
+main  form input[type="reset"],
+main  form button {
+background-color: darkblue;
+color: white; border: none;
+cursor: pointer;
+transition: background-color 0.3s ease;
+ }
+main  form input[type="submit"]:hover,
+main  form input[type="reset"]:hover,
+main  form button:hover {
+ background-color: #00008b;
+  }
+main form input:focus, form select:focus{
+   outline: none;
+   border-color: #3498db;
+}
+main form button{
+   background-color: #3498db;
+   color: white;
+   border: none;
+   margin-top: 20px;
+   cursor: pointer;
+   transition: background-color 0.3 ease;
+
+}
+
+main form button:hover{
+   background-color: #2980b9;
+}
+
+#result, #conversionHistory {
+margin-top: 10px;
+font-weight: bold;
+}
+#error {
+margin-top: 10px;
+color: red;
+}
+
+ main form#conversionForm { 
+      margin: 20px auto;
+      padding: 20px; 
+      border: 1px solid #ccc; 
+      border-radius: 8px; 
+      width: 300px; 
+      background-color: #f9f9f9; 
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); 
+   } 
+   main form#conversionForm h1 { 
+      text-align: center; 
+      color: #4c86af; 
+      margin-bottom: 20px; 
+   } 
+   main form#conversionForm label { 
+      display: block; 
+      margin-bottom: 5px; 
+      font-weight: bold; 
+      color: #333;
+    } 
+    main form#conversionForm input[type="text"],
+    main form#conversionForm select { 
+      width: 100%; 
+      padding: 8px; 
+      margin-bottom: 15px; 
+      border: 1px solid #ddd; 
+      border-radius: 5px; 
+      font-size: 1em; 
+   }
+   main form#conversionForm input[type="submit"], 
+   main form#conversionForm input[type="reset"] { 
+      background-color: darkblue; 
+      color: white; 
+      border: none; 
+      padding: 10px 15px; 
+      border-radius: 5px; 
+      cursor: pointer; 
+      transition: background-color 0.3s ease; 
+      width: 48%; 
+      margin-right: 2%;
+      font-size: 1em; 
+   } 
+   main form#conversionForm input[type="reset"] { 
+      margin-right: 0;
+      } 
+      main form#conversionForm input[type="submit"]:hover,
+       main form#conversionForm input[type="reset"]:hover { 
+         background-color: #00008b; 
+      }
+
+      #historyContainer{
+
+         max-width: 800px;
+         margin:0 auto 40px auto;
+         padding: 20px;
+         background-color: #ffffff;
+         border: 1px solid #34508f;
+         border-radius: 4px;
+         font-size: 1em;
+         color: #333;
+
+      }
+
+      .history-item{
+         margin-bottom:12px;
+         padding: 15px;
+         background-color: #f0f4ff;
+         border-left: 5px solid #34508f;
+         border-radius: 4px;
+         font-size: 1em;
+         color: #333;
+         position: relative;
+
+      }  
+      .history-item::after{
+         content: "";
+         background-color: #ccc;
+         border-left: 5px solid #34508f;
+         position: absolute;
+         bottom: -6px;
+         left: 0;
+         width: 100%;
+         height: 1px;
+         opacity: 0.5;
+
+
+      }  
+      a[href="/"]{
+         display: block;
+         text-align: center;
+         margin: 20px auto;
+         padding: 10px;
+         background-color: #2c3e50;
+         color: white;
+         text-decoration: none;
+         width: 200px;
+         border-radius: 5px;
+      }
+      a[href="/"]{
+         background-color: #34495e;
+      }
+
+
+footer {
+ position: fixed; bottom: 0;
+ left: 0;
+  padding: 10px;
+  width: 100%;
+  color: #fff;
+  background-color: darkblue;
+   text-align: center;
+    }
+   
