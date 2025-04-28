@@ -56,6 +56,6 @@ System Workflow:
 Conclusion:
 ✅ Automates conversion & history tracking
 ✅ Uses modern tech & real-time exchange rates
-![image](https://github.com/user-attachments/assets/b19d9e74-b93e-464e-9bf8-90a71bda1a2d)
+
 
 
